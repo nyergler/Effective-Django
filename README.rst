@@ -10,7 +10,8 @@ the `effective-django-tutorial`_ repository.
 If you're interested in building HTML, PDF, ePub, or other generated
 formats, you can do so by:
 
-#. Check out this repository
+#. Make sure LaTeX is installed on your machine. (Note: this is non-trivial on Macs)
+#. Check out this repository (Make sure to use --recursive to get submodule)
 #. Bootstrap the buildout::
 
      $ cd effective-django
