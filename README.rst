@@ -10,8 +10,11 @@ the `effective-django-tutorial`_ repository.
 If you're interested in building HTML, PDF, ePub, or other generated
 formats, you can do so by:
 
-#. Make sure LaTeX is installed on your machine. (Note: this is non-trivial on Macs)
-#. Check out this repository (Make sure to use --recursive to get submodule)
+#. Make sure LaTeX is installed on your machine.
+
+   For Macs, it is recommended you use `MacTeX`_
+
+#. Check out this repository (Use --recursive to get the tutorial submodule)
 #. Bootstrap the buildout::
 
      $ cd effective-django
@@ -22,6 +25,12 @@ formats, you can do so by:
      $ ./bin/buildout
 
    This will install the dependencies needed to build the content.
+   
+#. Alternatively, use virtualenv (from within repository)::
+
+     $ virtualenv .
+     $ . bin/activate
+     $ pip install -r requirements.txt
 
 #. Run ``make``::
 
@@ -35,4 +44,5 @@ Run ``make`` without any parameters for a list of possible targets.
 .. _`effective-django-tutorial`: https://github.com/nyergler/effective-django-tutorial
 .. _`ReStructured Text`: http://docutils.sf.net/
 .. _Sphinx: http://sphinx-doc.org/
+.. _`MacTeX`: http://tug.org/mactex/
 .. _buildout: http://www.buildout.org/
